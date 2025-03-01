@@ -154,7 +154,7 @@ void SnakeMap::DisplayPotentialPathToNewApple()
     
     // GuyA: Just in case, because it was removed from the ctor
     tmpSnakeMap.clear_map();
-    cout << "created temporary copies of snake and snake map" << endl;
+    //cout << "created temporary copies of snake and snake map" << endl;
 
     // 1) Calculate the path to the new food --> get a list of the 
     // cells the new path will pass through. Make sure food_eaten
@@ -180,14 +180,14 @@ void SnakeMap::findPathRecuersively(IN Snake& snake, IN SnakeMap& snakeMap, INOU
         // after displaying the "potential solution"
         // TODO: Add some logic to limit the print ONLY for 
         // the first time a path was found
-        cout << "APPLE WAS EATEN" << endl;
+        //cout << "APPLE WAS EATEN" << endl;
         displayMapWithPotentialPath(path);
         return;
     }
     
     if (true == is_game_end(&snake))
     {
-        cout << "reached end game" << endl;
+        //cout << "reached end game" << endl;
         return;
     }
     
